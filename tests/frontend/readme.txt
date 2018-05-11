@@ -1,0 +1,1 @@
+Pasta para armazenar os testes de front-end.

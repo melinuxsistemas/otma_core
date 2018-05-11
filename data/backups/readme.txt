@@ -1,0 +1,1 @@
+Pasta responsável pelo armazenamento de cópias de segurança.

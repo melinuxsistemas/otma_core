@@ -1,0 +1,1 @@
+Pasta para armazenar as dependencias de front end instaladas pelo bower.

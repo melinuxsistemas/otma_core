@@ -1,0 +1,1 @@
+Pasta para armazenar os arquivos estáticos de cada modulo.

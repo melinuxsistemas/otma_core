@@ -1,0 +1,1 @@
+Pasta para tabelas de importação/exportação e cópias de segurança.
