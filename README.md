@@ -1,4 +1,18 @@
-# project_template
+# Otma Core
 
-Para iniciar um projeto:
-python manage.py startapp --template=https://github.com/melinuxsistemas/project_template <app_name>
+Core for company projects. To install app:
+
+	1. Execute: pip install https://github.com/melinuxsistemas/otma_core/zipball/master
+
+	2. Add "otma_core" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'otma_core',
+    ]
+
+	3. Include the polls URLconf in your project urls.py like this:
+
+    	path('core/', include('otma_core.urls')),
+
+	4. Run `python manage.py migrate` to create the core models.
