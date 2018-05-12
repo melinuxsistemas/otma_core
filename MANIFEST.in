@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+recursive-include otma_core/conf *
+recursive-include otma_core/logs *
+recursive-include otma_core/test *
+recursive-include otma_core/static *
+recursive-include otma_core/templates *
