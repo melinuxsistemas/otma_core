@@ -4,7 +4,7 @@ from otma_core.modules.security.backup.services import BackupManager
 
 
 class Command(BaseCommand):
-    help = 'Print hello world'
+    help = 'Command to create the system backup.'
 
     def handle(self, **options):
         backup_paramters = BackupManager().create_backup()
