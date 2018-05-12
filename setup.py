@@ -35,5 +35,6 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
+    install_requires=get_requirements(),
     setup_requires=get_requirements(),
 )
