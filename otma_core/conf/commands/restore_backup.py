@@ -1,17 +1,11 @@
-from django.core.management.base import BaseCommand, CommandError
-from libs.backup.backup import BackupManager
-from django.core.management import call_command
-from dbbackup.db.sqlite import SqliteConnector, SqliteCPConnector
-from django.utils.six import BytesIO
-import django
-import gzip
-import os
+from django.core.management.base import BaseCommand
+from otma_core.modules.security.backup.services import BackupManager
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "sistema_contabil.settings")
+import django
 
 
 class Command(BaseCommand):
-    help = 'Print hello world'
+    help = 'Command to restore backup.'
 
     def handle(self, **options):
 
