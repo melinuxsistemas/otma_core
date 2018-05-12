@@ -7,6 +7,10 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
+
+def get_requirements():
+    return open(os.path.join(os.path.dirname(__file__), 'otma_core/conf/project/backend_requirements.txt')).read().splitlines()
+
 setup(
     name='otma-core',
     version='0.1',
@@ -31,8 +35,5 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
-    install_requires={
-        'django-dbbackup':  ["django-dbbackup"],
-        'dropbox': ["dropbox"],
-    }
+    setup_requires=get_requirements(),
 )
